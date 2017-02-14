@@ -1,0 +1,454 @@
+﻿<section id="home">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="img-responsive" src="~/images/slider/bg4.jpg" alt="slider" height="642px;">
+                @Html.Partial("_PricePartialPage")
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="~/images/slider/bg5.jpg" alt="slider" height="642px;">
+                @Html.Partial("_PricePartialPage")
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="~/images/slider/bg9.jpg" alt="slider" height="642px;">
+                @Html.Partial("_PricePartialPage")
+            </div>
+        </div>
+
+        <a class="carousel-left member-carousel-control hidden-xs" href="#main-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="carousel-right member-carousel-control hidden-xs" href="#main-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+    </div>
+</section>
+
+<section id="about-us">
+    <div class="container">
+        <div class="text-center">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="title-one">About Us?</h2>
+                <p>Alif Assets Management Limited (the Company) is an Asset Management Company based in Dhaka, registered with Bangladesh Securities and Exchange Commission (BSEC).</p>
+            </div>
+        </div>
+        <div class="about-us">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>About us?</h3>
+                    <ul class="nav nav-tabs">
+                        <li class=""><a href="#about" data-toggle="tab"><i class="fa fa-chain-broken"></i> About</a></li>
+                        <li class=""><a href="#vision" data-toggle="tab"><i class="fa fa-eye"></i> Vision</a></li>
+                        <li class=""><a href="#mission" data-toggle="tab"><i class="fa fa-th-large"></i> Mission</a></li>
+                        <li class=""><a href="#values" data-toggle="tab"><i class="fa fa-th-large"></i> Values</a></li>
+                        <li class="active"><a href="#community" data-toggle="tab"><i class="fa fa-users"></i> Community</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="about">
+                            <div class="media">
+                                <img class="pull-left media-object" src="images/about-us/about.jpg" alt="about us">
+                                <div class="media-body">
+                                    <p>Incorporated in 2009, the Company had launched its Open-Ended Mutual Fund named Sandhani Life Unit Fund (SLUF) in 2012 and since then has been managing the fund adhering to all the laws, including BSEC (Mutual Fund) Rules, 2001. The fund has provided dividend to its investors in all the four Fiscal Years of since its inception and has earned the reputation of being a vehicle of disciplined investment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vision">
+                            <div class="media">
+                                <img class="pull-left media-object" src="images/about-us/vision.jpg" alt="Vision">
+                                <div class="media-body">
+                                    <p>To be recognized as the Most Rewarding, Reliable and Reputed Capital Market Institution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="mission">
+                            <div class="media">
+                                <img class="pull-left media-object" src="images/about-us/mission.jpg" alt="Mission">
+                                <div class="media-body">
+                                    <ul>
+                                        <li>To become new and opportune Investment Sector Leader</li>
+                                        <li>To create innovative products that deliver superior returns</li>
+                                        <li>To become top Investment Brand of the Country</li>
+                                        <li>To become most disciplined and compliant Investment Institution</li>
+                                    </ul>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="values">
+                            <div class="media">
+                                <img class="pull-left media-object" src="images/about-us/values.jpg" alt="Values">
+                                <div class="media-body">
+                                    <ul>
+                                        <li>Innovative</li>
+                                        <li>Trustworthy</li>
+                                        <li>Resilient</li>
+                                        <li>Responsive</li>
+                                    </ul>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active in" id="community">
+                            <div class="media">
+                                <img class="pull-left media-object" src="images/about-us/community.jpg" alt="Community">
+                                <div class="media-body">
+                                    <p>Tide up with local and International leading Research, Technology and Investment Management Institutions </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Our Skills</h3>
+                    <div class="skill-bar">
+                        <div class="skillbar clearfix " data-percent="100%">
+                            <div class="skillbar-title">
+                                <span>15&nbsp;Years&nbsp;Investment&nbsp;experience&nbsp;in&nbsp;Bangladesh</span>
+                            </div>
+                            <div class="skillbar-bar" style="width: 100%;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div> <!-- End Skill Bar -->
+                        <div class="skillbar clearfix" data-percent="100%">
+                            <div class="skillbar-title"><span>Highly&nbsp;reputed&nbsp;principal</span></div>
+                            <div class="skillbar-bar" style="width: 100%;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div> <!-- End Skill Bar -->
+                        <div class="skillbar clearfix " data-percent="100%">
+                            <div class="skillbar-title"><span><b>IamSystem</b>&nbsp;an&nbsp;Intregrated&nbsp;Asset&nbsp;Management&nbsp;System&nbsp;to&nbsp;optimize&nbsp;Research&nbsp;and&nbsp;Portfolio&nbsp;feed</span></div>
+                            <div class="skillbar-bar" style="width: 100%;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div> <!-- End Skill Bar -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="our-team" id="board-team">
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="section-header">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="title-one">Board of Directors</h2>
+            </div>
+        </div>
+
+        <!-- / END SECTION HEADER -->
+        <!-- TEAM MEMBERS -->
+        <div class="row wow fadeInRight animated animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
+            <!-- MEMBER -->
+            <div class="col-lg-6 col-sm-6">
+                <div class="team-member">
+                    <figure class="profile-pic">
+                        <img src="~/images/our-team/director1.png" alt=""> <!-- MEMBER PROFILE PIC -->
+                    </figure>
+                    <div class="member-details">
+                        <h5 class="dark-text red-border-bottom">Neaz Ahmed</h5>
+                        <div class="position">
+                            Chairman
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                    </div>
+                    <div class="details">
+                        <p>
+                            Mr. Neaz Ahmed is a Professor at the Institute of Business Administration (IBA), University of Dhaka. He earned his graduation with honors in Economics from University of Dhaka, MBA from IBA, and MBA in Finance from University of New Brunswick, Canada under a CIDA Fellowship.  He started his career in Sonali Bank, and then worked as an Investment Officer in BSRS (now Bangladesh Development Bank Ltd), and later as Deputy Director Finance in REB.  He also served as a Vice-President in the Bengal Group.  In 1987, he joined IBA as a faculty member.  Apart from this, he has vast experience in consulting and training in HRM, Finance and Strategic management areas for various national and multinational organizations like BASF, BOC (Linde BD), WFP, GTZ (now GIZ), USAID, Swisscontact, European Union, DESCO, Dekko Group etc. Having over 40 years’ of combined experience in academia and corporate arena, Mr. Ahmed’s valuable expertise and credentials are set to provide the right guidance for the Company.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- / END MEMBER -->
+            <div class="col-lg-6 col-sm-6">
+                <div class="team-member">
+                    <figure class="profile-pic">
+                        <img src="~/images/our-team/director2.png" alt="">
+                    </figure>
+                    <div class="member-details">
+                        <h5 class="dark-text green-border-bottom">G. M. Salehuddin Ahmed</h5>
+                        <div class="position">
+                            Director
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                    </div>
+                    <div class="details">
+                        <p>
+                            G. M. Salehuddin Ahmed, an MBA from IBA, University of Dhaka has had an illustrious career in the banking and financial sector, where he headed Non-Banking Financial Institutions such as Bay Leasing, SABINCO and Bangladesh Finance and Investment Company Limited (BIFC) as Managing Director and CEO before finally joining the Capital Market Institution of Rupali Investments Limited, a wholly owned Merchant Bank. He also attended many seminars and workshops on Finance and Development Finance at home and abroad. Having more than 40 years of experience in the Financial Sector of Bangladesh, Mr. Ahmed is well equipped to provide valuable service in the Corporate Governance of the Company.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- / END TEAM MEMBER LIST -->
+    </div> <!-- / END CONTAINER -->
+</section>
+<section class="our-team" id="management-team">
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="section-header">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="title-one">Management Team</h2>
+            </div>
+        </div>
+
+        <!-- / END SECTION HEADER -->
+        <!-- TEAM MEMBERS -->
+        <div class="row wow fadeInRight animated animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
+            <!-- MEMBER -->
+            <div class="col-lg-4 col-sm-4">
+                <div class="team-member">
+                    <figure class="profile-pic">
+                        <img src="~/images/our-team/member1.png" alt=""> <!-- MEMBER PROFILE PIC -->
+                    </figure>
+                    <div class="member-details">
+                        <h5 class="dark-text red-border-bottom">Saiful Anam</h5>
+                        <div class="position">
+                            Managing Director and Chief Executive Officer
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                    </div>
+                    <div class="details">
+                        <p>
+                            Mr. Saiful Anam, a steadfast investment professional, has more than 9 years of working experience in countries couple of finest financial institutions. He has started his carrier in Standard Chartered Bank, one of the leading multinational banks in the country. He worked there in different capacities starting from Credit Underwriting, Credit Policy and Portfolio Management. He was also involved in various group level projects to enhance productivity and efficiency through improving process flows. Following his passion for Investment Banking and Capital Market he then joined as Head of Operations at Alliance Capital Asset Management Limited. During his tenure in Alliance Capital Asset Management he played a pivotal role in product development and corporate advisory services apart from his regular fund management operation. He has achieved the distinction of Magna Cum Laude in his Undergraduate Programme from North South University with Major in Finance & Accounting and Economics and is currently pursuing his MBA at IBA, University of Dhaka. His solid experience in the Financial Services Industry will prove to be valuable in taking the Company to its desired level of success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- / END MEMBER -->
+            <div class="col-lg-4 col-sm-4">
+                <div class="team-member">
+                    <figure class="profile-pic">
+                        <img src="~/images/our-team/member2.png" alt="">
+                    </figure>
+                    <div class="member-details">
+                        <h5 class="dark-text green-border-bottom">Md Alamgir Hossain</h5>
+                        <div class="position">
+                            Chief Financial Officer and Company Secretary
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                    </div>
+                    <div class="details">
+                        <p>
+                            Mr. Md. Alamgir Hossain has joined as Chief Financial Officer and then Company Secretary, part qualified in Chartered Accountancy from The Institute of Chartered Accountants of Bangladesh, and has over 11 years of Professional Experience in the area of Finance, Accounts, Tax, Audit and Company Secretary along with a Management Committee Member in both Local and Multinational, Public and Private Limited Companies in Manufacturing, Credit Rating, ICT and Financial Service Industry. Apart from that, he has 4 years of Practical Audit Job experience in Capital Market Institute, Bank and Non-bank Financial Institution, Manufacturing, Telecommunication, Hospital, and Other Service Industries when working with Hoda Vasi Chowdhury & Co., Chartered Accountants; an Independent Correspondent Firm to Deloitte Touche Tohmatsu. Prior to joining Alif Assets Management Limited Mr. Alamgir worked for Sonali Polaris FT Limited, served in Emerging Credit Rating Limited, and also served in TwinMOS Technologies BD, LLC. He has participated many Seminars, Workshops, and Trainings relevant to his fields of expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-4">
+                <div class="team-member">
+                    <figure class="profile-pic">
+                        <img src="~/images/our-team/member3.png" alt="">
+                    </figure>
+                    <div class="member-details">
+                        <h5 class="dark-text green-border-bottom">Mahmudul Alam</h5>
+                        <div class="position">
+                            Chief Investment Officer
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                    </div>
+                    <div class="details">
+                        <p>
+                            Mr. Mahmudul Alam has joined Alif Assets Management Limited as Chief Investment Officer in August 2016. Mr. Alam has over 11 years of experience in the area of Investment Management, Audit & Consultancy and Finance & Accounts. Prior to joining Alif Assets Management Limited, Mr. Alam worked as Manager - Audit and Consultancy for Hoda Vasi Chowdhury & Co., Chartered Accountants, local representative of Deloitte Touche Tohmatsu and PricewaterhouseCoopers. During his period with Hoda Vasi, he had worked with a good numbers of Foreign, Multinational and Local Public, Private and Listed Companies. He had completed BBA and MBA major in AIS from Rajshahi University and attended various seminars and training programs arranged by Hoda Vasi Chowdhury & Co, Deloitte Touche Tohmatsu, PricewaterhouseCoopers, Stock Bangladesh Ltd and the like.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- / END TEAM MEMBER LIST -->
+    </div> <!-- / END CONTAINER -->
+</section>
+
+<!--<section id="explore">
+    <div class="container">
+        <div class="row">
+            <div class="watch">
+                <img class="img-responsive" src="images/watch.png" alt="">
+            </div>
+            <div class="col-md-4 col-md-offset-2 col-sm-5">
+                <h2>our next event in</h2>
+            </div>
+            <div class="col-sm-7 col-md-6">
+                <ul id="countdown">
+                    <li>
+                        <span class="days time-font">00</span>
+                        <p>days </p>
+                    </li>
+                    <li>
+                        <span class="hours time-font">00</span>
+                        <p class="">hours </p>
+                    </li>
+                    <li>
+                        <span class="minutes time-font">00</span>
+                        <p class="">minutes</p>
+                    </li>
+                    <li>
+                        <span class="seconds time-font">00</span>
+                        <p class="">seconds</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
+        </div>
+    </div>
+</section>
+<section id="event">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                <div id="event-carousel" class="carousel slide" data-interval="false">
+                    <h2 class="heading">THE ROCKING Performers</h2>
+                    <a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                    <a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+                                        <h4>Chester Bennington</h4>
+                                        <h5>Vocal</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+                                        <h4>Mike Shinoda</h4>
+                                        <h5>vocals, rhythm guitar</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+                                        <h4>Rob Bourdon</h4>
+                                        <h5>drums</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+                                        <h4>Chester Bennington</h4>
+                                        <h5>Vocal</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+                                        <h4>Mike Shinoda</h4>
+                                        <h5>vocals, rhythm guitar</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-event">
+                                        <img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+                                        <h4>Rob Bourdon</h4>
+                                        <h5>drums</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guitar">
+                <img class="img-responsive" src="images/guitar.png" alt="guitar">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="guitar2">
+        <img class="img-responsive" src="images/guitar2.jpg" alt="guitar">
+    </div>
+    <div class="about-content">
+        <h2>About Evento</h2>
+        <p>We have created an extremely positive and relaxed environment all geared towards developing your skills whether you are an absolute beginner trying to get off the ground or an accomplished player looking to move to the next level. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a>
+    </div>
+</section>
+<section id="twitter">
+    <div id="twitter-feed" class="carousel slide" data-interval="false">
+        <div class="twit">
+            <img class="img-responsive" src="images/twit.png" alt="twit">
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="text-center carousel-inner center-block">
+                    <div class="item active">
+                        <img src="images/twitter/twitter1.png" alt="">
+                        <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+                        <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+                    </div>
+                    <div class="item">
+                        <img src="images/twitter/twitter2.png" alt="">
+                        <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+                        <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+                    </div>
+                    <div class="item">
+                        <img src="images/twitter/twitter3.png" alt="">
+                        <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+                        <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+                    </div>
+                </div>
+                <a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sponsor">
+    <div id="sponsor-carousel" class="carousel slide" data-interval="false">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10">
+                    <h2>Sponsors</h2>
+                    <a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                    <a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <ul>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <ul>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+                                <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="light">
+            <img class="img-responsive" src="images/light.png" alt="">
+        </div>
+    </div>
+</section>-->
