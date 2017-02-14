@@ -308,14 +308,13 @@
     <Content Include="css\responsive.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ticker-style.css" />
+    <Content Include="Documents\Image_e28138bb-40e6-49d4-9a28-5a5a8f03656b_price list 2.png" />
+    <Content Include="Documents\thambnailImage_e28138bb-40e6-49d4-9a28-5a5a8f03656b_price list 2.png" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="Global.asax" />
-    <Content Include="icons\apple-touch-icon-114x114.png" />
-    <Content Include="icons\apple-touch-icon-74x74.png" />
-    <Content Include="icons\apple-touch-icon.png" />
     <Content Include="icons\favicon.ico" />
     <Content Include="images\about-bg.jpg" />
     <Content Include="images\about-us\about.jpg" />
@@ -395,6 +394,7 @@
     <Content Include="assets\icon-fonts\fonts\712-icon-fonts.ttf" />
     <Content Include="assets\icon-fonts\fonts\712-icon-fonts.woff" />
     <Content Include="App_Code\ToastrBuilder.cshtml" />
+    <Content Include="Documents\RESUME_Resume_of_Tamima.pdf" />
     <None Include="Properties\PublishProfiles\scml.pubxml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
@@ -726,7 +726,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Documents\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
