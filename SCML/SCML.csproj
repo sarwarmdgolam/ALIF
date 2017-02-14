@@ -321,6 +321,8 @@
     <Content Include="images\about-us\about.jpg" />
     <Content Include="images\about-us\community.jpg" />
     <Content Include="images\about-us\mission.jpg" />
+    <Content Include="images\about-us\values.jpg" />
+    <Content Include="images\about-us\vision.jpg" />
     <Content Include="images\contact-bg.jpg" />
     <Content Include="images\controls.png" />
     <Content Include="images\dl-arr.png" />
@@ -343,6 +345,11 @@
     <Content Include="images\main-red-bg.gif" />
     <Content Include="images\map-icon.png" />
     <Content Include="images\modal_news.png" />
+    <Content Include="images\our-team\director1.png" />
+    <Content Include="images\our-team\director2.png" />
+    <Content Include="images\our-team\member1.png" />
+    <Content Include="images\our-team\member2.png" />
+    <Content Include="images\our-team\member3.png" />
     <Content Include="images\performar-bg.jpg" />
     <Content Include="images\slider\bg1.jpg" />
     <Content Include="images\slider\bg10.jpg" />
