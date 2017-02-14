@@ -1,0 +1,16 @@
+﻿@model SCML.Models.PriceViewModel
+@{
+    Layout = null;
+}
+<div class="carousel-caption">
+
+        @if (Model.Prices != null)
+        {
+            foreach (var item in Model.Prices)
+            {
+               @Html.Raw(@item.contents);
+            }
+        }
+
+    </div>
+

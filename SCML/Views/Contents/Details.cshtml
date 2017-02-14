@@ -1,0 +1,126 @@
+﻿@model SCML.Models.Content
+
+@{
+    Layout = null;
+    ViewBag.Title = Model.title;
+    Layout = "~/Views/Shared/_Layout2nd.cshtml";
+}
+
+<div class="package-header yellow-bg">
+    <h5>@ViewBag.Title</h5>
+</div>
+
+@*<div style="padding:10px">
+
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_66">Weekly Market Review for 12.06.2016 to 16.06.2016</a>
+                            </h4>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <i>22-06-2016</i>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapse_66" class="panel-collapse collapse  in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p style="text-align: justify;">The benchmark index DSEX closed at 4395.27 points which is 0.54% lower than that of the previous week. Besides pursuance of quick profit booking by the investors made a little selling pressure on market. This bearish sentiment also reflected in turnover activity as such the weekly average turnover value stood at BDT 3943 mn (14.25% weekly increase). Sectors like fuel &amp; power, engineeering, Pharma, &amp; Textile, Miscellaneous hold the top position as turnover contributors.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <a target="_blank" href="/Documents/Contentwmr 1216.pdf" title="Download Now"><img src="/Content/images/downloads.png" width="55" height="40" alt="Download Now"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+<div style="padding:10px">
+    @if (Model != null)
+    {
+       
+        if (Request.IsAuthenticated)
+        {
+            <a class="btn" style="padding: 2px 12px; color: #fff; background-color: #ac9121;border-color: #ac9121;" href="@Url.Action("Edit", "Contents", new { id = @Model.id })">Edit Now</a>
+        }
+        <br />
+        <br />
+        @Html.Raw(HttpUtility.HtmlDecode(Model.contents));
+            if (Model.content_file_path != null && Model.Type.name != "Event")
+            {
+
+                string[] items = Model.content_file_path.Split(';');
+                for (int i = 0; i < items.Count(); i++)
+                {
+                <br />
+                    string[] itemName = items[i].Split('_');
+
+
+                <a target="_blank" href="@items[i]" title="Download Now"><img src="~/images/downloads.png" width="55" height="40" alt="Download Now" /></a>
+                <span>@itemName[itemName.Count() - 1]</span>
+                }
+            }
+
+            else if (Model.Type.name == "Event")
+            {
+                string[] items = Model.large_image_path.Split(';');
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    @for (int i = 0; i < items.Count(); i++)
+                    {
+                        if (i == 0)
+                        {
+                            <li data-target="#myCarousel" data-slide-to="@i" class="active"></li>
+                        }
+                        else
+                        {
+                            <li data-target="#myCarousel" data-slide-to="@i"></li>
+                        }
+
+                    }
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    @for (int i = 0; i < items.Count(); i++)
+                    {
+
+                        if (i == 0)
+                        {
+                            <div class="item active">
+                                <img src="@items[i]" alt="No Image" width="753" height="323">
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="item">
+                                <img src="@items[i]" alt="No Image" width="753" height="323">
+                            </div>
+                        }
+
+                    }
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            }
+
+    }
+
+</div>

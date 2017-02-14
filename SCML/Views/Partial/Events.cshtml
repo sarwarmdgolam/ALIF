@@ -1,0 +1,93 @@
+﻿@model SCML.Models.EventsViewModel
+@{
+    Layout = null;
+}
+
+@*<div id="divEventsPartialView" class="panel panel-warning">
+    <div class="panel-heading">
+        <h3 class="panel-title">Workshops / Events</h3>
+    </div>
+    <div class="panel-body">
+        <marquee behavior="scroll" direction="left" onmouseover="this.setAttribute('scrollamount', '0', '0');this.stop();" onmouseout="this.setAttribute('scrollamount', '6', '0');this.start();">
+            <table>
+                <tr>
+                    @if (Model.Events != null)
+                    {
+                        foreach (var item in Model.Events)
+                        {
+                            <td style="padding-right:16px;">
+                                @if (item.large_image_path != null && item.large_image_path.Split(';').Count() > 0)
+                                {
+                                <a href="@Url.Action("Details","Contents", new { id = @item.id})" title="@item.title">
+                                    <div class="panel panel-default" style="width:100%; float:left">
+                                        <div class="panel-body">
+                                            <img alt="@item.title" src="@item.thambnail_image_path.Split(';')[0]" height="124px" width="110px" />
+                                        </div>
+                                        <div class="panel-footer" style="max-width:140px; overflow:hidden">@item.title</div>
+                                    </div>
+                                </a>
+                                }
+                            </td>
+                        }
+                    }
+                </tr>
+            </table>
+        </marquee>
+    </div>
+</div>*@
+
+
+<section class="stats">
+        <div class="container">
+            <div class="section-header">
+
+                <!-- SECTION TITLE -->
+                <h2 class="white-text">Workshops/Events</h2>
+
+            </div>
+            <!-- STATS -->
+            <div class="row">
+
+                <marquee behavior="scroll" direction="left" onmouseover="this.setAttribute('scrollamount', '0', '0');this.stop();" onmouseout="this.setAttribute('scrollamount', '6', '0');this.start();">
+                    <table>
+                        <tr>
+                            @if (Model.Events != null)
+                            {
+                                foreach (var item in Model.Events)
+                                {
+                                    <td style="padding-right:16px;">
+                                        @if (item.large_image_path != null && item.large_image_path.Split(';').Count() > 0)
+                                        {
+                                            <a href="@Url.Action("Details", "Contents", new { typename = @item.Type.name, contenttitle=@item.title })" title="@item.title">
+                                                <div class="panel panel-default" style="width:100%; float:left">
+                                                    <div class="panel-body">
+                                                        <img alt="@item.title" src="@item.thambnail_image_path.Split(';')[0]" height="124px" width="110px" />
+                                                    </div>
+                                                    <div class="panel-footer" style="max-width:140px; overflow:hidden">@item.title</div>
+                                                </div>
+                                            </a>
+                                        }
+                                    </td>
+                                }
+                            }
+                        </tr>
+                    </table>
+                </marquee>
+            </div>
+            @*<script>
+        $(document).ready(function() {
+
+          $("#owl-event").owlCarousel({
+
+              autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+              items : 1,
+              itemsDesktop : [1199,3],
+              itemsDesktopSmall : [979,3]
+
+          });
+
+        });
+            </script>*@
+        </div>
+    </section>
