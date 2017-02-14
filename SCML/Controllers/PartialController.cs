@@ -41,6 +41,10 @@ namespace SCML.Controllers
             return PartialView(_model);
         }
 
+        public ActionResult FinancialLiteracy()
+        {
+            return View();
+        }
        // [HttpPost]
         public ActionResult GetInTouch(String name, String email)
         {
