@@ -1,0 +1,149 @@
+@*<link rel="stylesheet" href="~/Content/bootstrap/bootstrap.less" media="screen">*@
+@model SCML.Models.Content
+@{
+    ViewBag.Title = "Create New Content";
+}
+<div class="package-header yellow-bg">
+    <h5>@ViewBag.Title</h5>
+</div>
+
+<div style="margin:20px">
+
+    @using (Html.BeginForm("Create", "Contents", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.type_id, "Type", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+                    @Html.DropDownList("type_id", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.type_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.title, "Title", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+
+                    @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.summary, "Summary", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.summary, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.summary, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.contents, "Content", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div style="overflow:auto">
+                        @Html.EditorFor(model => model.contents, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.contents, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.large_image_path, "Image (Max 15MB)", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    <table width="100%">
+                        <tr>
+                            <td width="80%">
+                                <input type="file" name="file1" id="file1" size="15360" accept=".jpg , .png" multiple />
+                            </td>
+                            <td width="20%" align="right">
+                                <input type="submit" name="upload" value="imageUpload" class="btn btn-warning" style="width:110px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                @if (Model != null && Model.large_image_path != null)
+                                {
+                                <div class="attachment" id="divImage">
+                                    <a id="imgFilePath" href="@Url.Action("Download", "Contents", new { path = Model.large_image_path })">@Model.large_image_path</a>
+                                    <a href="javascript:void(0);" data-id="@Model.id" data-filetype="image" class="deleteImage">X</a>
+                                    @Html.HiddenFor(model => model.large_image_path);
+                                    @Html.HiddenFor(model => model.thambnail_image_path)
+                                </div>
+                                }
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.content_file_path, "Downloadable File (Max 15MB)", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    <table width="100%">
+                        <tr>
+                            <td width="80%">
+                                <input type="file" name="file2" id="file2" size="15360" multiple />
+                            </td>
+                            <td width="20%" align="right">
+                                <input type="submit" name="upload" value="contentUpload" class="btn btn-warning" style="width:110px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                @if (Model != null && Model.content_file_path != null)
+                                {
+                                <div class="attachment" id="divImage">
+                                    <a id="imgFilePath" href="@Url.Action("Download", "Contents", new { path = Model.content_file_path })">@Model.content_file_path</a>
+                                    <a href="javascript:void(0);" data-id="@Model.id" data-filetype="image" class="deleteImage">X</a>
+                                    @Html.HiddenFor(model => model.content_file_path);
+                                </div>
+                                }
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.href, "Href", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.href, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.sort_order, "Sort Order", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.sort_order, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.sort_order, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.publish_date, "Date", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-5">
+                    @*@Html.EditorFor(model => model.publish_date, new { @Value = @DateTime.Now.ToShortDateString() })*@
+                    @Html.EditorFor(model => model.publish_date, new { htmlAttributes = new { @class = "form-control datecontrol" } })
+                    @Html.ValidationMessageFor(model => model.publish_date, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+
+                    <input type="submit" name="upload" value="Create" class="btn btn-warning" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>

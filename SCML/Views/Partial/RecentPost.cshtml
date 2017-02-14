@@ -1,0 +1,31 @@
+﻿@model SCML.Models.RPostsViewModel
+@{
+    Layout = null;
+}
+
+<div class="col-md-5 company-details  text-left">
+    <div class="icon-top red-text">
+        <i class="icon-fontawesome-webfont-4"></i> <a href="@Url.Action("MoreList", "Contents", new { typename = "POST", contenttitle = "" })" title="Recent Post">
+            Recent Post
+        </a>
+    </div>
+
+    @if (Model.RecentPosts != null)
+    {
+        <ul class="list-unstyled carousel-list">
+            @foreach (var item in Model.RecentPosts)
+            {
+                <li class="animated bounceInLeft animation-delay-11">
+                    <i class="icon icon-fontawesome-webfont-78"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="@Url.Action("Details", "Contents", new { typename = "POST", contenttitle = item.title })" title="@item.title">
+                        @item.title
+                    </a>
+                </li>
+            }
+
+            @*<li class="animated bounceInLeft animation-delay-13"><i class="icon icon-fontawesome-webfont-78"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Daily News Update October 09,</a></li>
+                <li class="animated bounceInLeft animation-delay-15"><i class="icon icon-fontawesome-webfont-78"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Daily News Update October 02,</a></li>
+                <li class="animated bounceInLeft animation-delay-15"><i class="icon icon-fontawesome-webfont-78"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Daily News Update September 29,</a></li>*@
+        </ul>
+    }
+</div>

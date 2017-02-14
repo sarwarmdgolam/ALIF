@@ -1,0 +1,47 @@
+@model SCML.Models.EmailFormModel
+
+@{
+    ViewBag.Title = "Uploaded CV Details";
+}
+<div class="package-header yellow-bg">
+    <h5>@ViewBag.Title</h5>
+</div>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.full_name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.full_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.applied_for)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.applied_for)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt>
+            Attachment
+        </dt>
+        <dd>
+            @if (Model.file_path != null)
+            {
+                <a class="a-blue" href="@Model.file_path" target="_blank">Download...</a>
+            }
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
+

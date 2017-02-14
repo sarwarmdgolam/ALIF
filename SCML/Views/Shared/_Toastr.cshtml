@@ -1,0 +1,6 @@
+﻿@using SCML.Models
+@if (TempData.ContainsKey("Toastr"))
+{
+    SCML.Models.Toastr toastr = TempData["Toastr"] as SCML.Models.Toastr;
+    @ToastrBuilder.ShowToastMessages(toastr);
+};
