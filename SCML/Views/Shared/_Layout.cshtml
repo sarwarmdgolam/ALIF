@@ -7,24 +7,6 @@
     <meta name="author" content="">
     <title>Alif Assets Management</title>
 
-    <link href="~/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/css/font-awesome.min.css" rel="stylesheet">
-    <link href="~/css/main.css" rel="stylesheet">
-
-    <link href="~/css/animate.css" rel="stylesheet">
-    <link href="~/css/responsive.css" rel="stylesheet">
-    <link href="~/css/ticker-style.css" rel="stylesheet">
-
-   
-      @*<link rel="stylesheet" href="~/css/jquery.vegas.min.css">*@
-    @*<link rel="stylesheet" href="css/styles.css">*@
-
-
-    <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
-            <script src="js/respond.min.js"></script>
-        <![endif]-->
-
     <link rel="shortcut icon" href="~/images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png">
@@ -32,58 +14,62 @@
     <link rel="apple-touch-icon-precomposed" href="~/images/ico/apple-touch-icon-57-precomposed.png">
 
 
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
+  
+   
+
    
 
     <script src="~/js/jquery-3.1.1.js"></script>
 
 
-    @*<script src="~/js/jquery.nav.js"></script>*@
-
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-
+    
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+   
 
     <script type="text/javascript" src="~/js/jquery.js"></script>
     <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="~/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="~/js/jquery.parallax.js"></script>
+
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="~/js/gmaps.js"></script>
-    <script type="text/javascript" src="~/js/smoothscroll.js"></script>
-    <script type="text/javascript" src="~/js/jquery.parallax.js"></script>
+    
+
+    <script type="text/javascript" src="~/js/main.js"></script>
+
+   
+
+    
     <script type="text/javascript" src="~/js/coundown-timer.js"></script>
     <script type="text/javascript" src="~/js/jquery.scrollTo.js"></script>
     <script type="text/javascript" src="~/js/jquery.nav.js"></script>
-    @*<script type="text/javascript" src="~/js/main.js"></script>*@
-    <script src="~/js/jquery.ticker.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/js/jquery.ticker.js"></script>
 
 
 
-    <script type="text/javascript">
-        $(function () {
-            $('#js-news').ticker(
-                {
-                    controls: false,        // Whether or not to show the jQuery News Ticker controls
-                    titleText: 'Latest News'
-                });
-        });
-    </script>
-
-    <script type="text/javascript">
+    @*<script type="text/javascript">
 
         $(window).on('load', function () {
             $('#myModal').modal('show');
         });
 
-    </script>
+    </script>*@
 
 </head>
 
 <body>
-    <div class="preloader">
+    @*<div class="preloader">
         <div class="preloder-wrap">
             <div class="preloder-inner">
                 <div class="ball"></div>
@@ -95,7 +81,7 @@
                 <div class="ball"></div>
             </div>
         </div>
-    </div><!--/.preloader-->
+    </div>*@<!--/.preloader-->
 
     <div class="container">
         <!-- Modal -->
@@ -120,82 +106,74 @@
         </div>
     </div>
 
-
-    <header id="header" role="banner">
-        <div class="main-nav navbar-fixed-top">
+    <header id="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
             <div class="container">
+                <div class="navbar-header">
 
-                <div class="row">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-responsive" src="~/images/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="scroll"><a href="#home">Home</a></li>
-                            <li class="scroll"><a href="#about-us">About Us</a></li>
-                            <li class="scroll"><a href="#board-team">Boards</a></li>
-                            <li class="scroll"><a href="#management-team">Management</a></li>
 
+                    <a class="navbar-brand" style="background-color:#ffffff" href="index.html"><h1><img src="~/images/logo.png" alt="logo"></h1></a>
+                </div>
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="scroll"><a href="#navigation">Home</a></li>
+                        <li class="scroll"><a href="#about-us">About Us</a></li>
+                        <li class="scroll"><a href="#board-team">Boards</a></li>
+                        <li class="scroll"><a href="#management-team">Management</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Career <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li>@Html.ActionLink("Employment in ALIF", "Index", "Career")</li>
+                                <li>@Html.ActionLink("Current Openings", "CurrentOpenings", "Career")</li>
+                            </ul>
+                        </li>
+                        <li class="scroll"><a href="#contact">Contact</a></li>
+                        <!-- Admin Menu-->
+                        @if (Request.IsAuthenticated)
+                        {
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Career <b class="caret"></b>
+                                    Admin <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-
-                                    <li>@Html.ActionLink("Employment in ALIF", "Index", "Career")</li>
-                                    <li>@Html.ActionLink("Current Openings", "CurrentOpenings", "Career")</li>
+                                    <li>@Html.ActionLink("Content Types", "Index", "Types")</li>
+                                    <li>@Html.ActionLink("Contents", "Index", "Contents")</li>
+                                    <li>@Html.ActionLink("Uploaded CV", "Index", "UploadCV")</li>
+                                    <li>@Html.ActionLink("Job", "Index", "JobDetails")</li>
+                                    <li><hr></li>
+                                    <li>
+                                        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <a href="javascript:document.getElementById('logoutForm').submit()" style="padding-left:21px;">Log off</a>
+                                        }
+                                    </li>
                                 </ul>
                             </li>
-                            <li class="scroll"><a href="#contact">Contact</a></li>
-                            <!-- Admin Menu-->
-                            @if (Request.IsAuthenticated)
-                            {
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        Admin <b class="caret"></b>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Content Types", "Index", "Types")</li>
-                                        <li>@Html.ActionLink("Contents", "Index", "Contents")</li>
-                                        <li>@Html.ActionLink("Uploaded CV", "Index", "UploadCV")</li>
-                                        <li>@Html.ActionLink("Job", "Index", "JobDetails")</li>
-                                        <li><hr></li>
-                                        <li>
-                                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
-                                            {
-                                                @Html.AntiForgeryToken()
-                                                <a href="javascript:document.getElementById('logoutForm').submit()" style="padding-left:21px;">Log off</a>
-                                            }
-                                        </li>
-                                    </ul>
-                                </li>
-                            }
-                        </ul>
+                        }
 
-                       
-
-
-                    </div>
-                    <div class="icon-top golden-text text-right" >
-                        <a href="/Partial/FinancialLiteracy"><img src="~/images/links/Financial Literacy.png" width="60px" height="30px" alt="Owl Image"></a>
-                        <a href="http://portal.office.com"  title="Web Mail"><i class="glyphicons glyphicons-envelope"></i></a>
-                        <a href="/account/login" title="Login" style="font-size:20px; margin-top:-20px"><i class="glyphicons glyphicons-user"></i></a>
-                    </div>
+                    </ul>
                 </div>
 
+                <div class="icon-top golden-text text-right" style="font-size:30px; padding:10px 0 0 10px">
+                    <a href="/Partial/FinancialLiteracy"><img src="/images/links/Financial Literacy.png" width="60px" height="30px" alt="Owl Image"></a>
+                    <a href="http://portal.office.com" target="_blank" title="Web Mail"><i class="icon-email-mail-streamline"></i></a>
+                    <a href="/account/login" title="Login" style="font-size:20px; margin-top:-20px"><i class="icon-man-people-streamline-user"></i></a>
+                </div>
             </div>
-        </div>
-    </header>
+        </div><!--/navbar-->
+    </header> <!--/#navigation-->
 
+
+   
 
    
 
@@ -258,47 +236,7 @@
         </div>
     </section>
 
-    <script>
-        $(document).ready(function () {
-
-            //get button by ID
-            $('#submit_contact').submit(function (e) {
-                e.preventDefault();
-
-                //call a function with parameters
-                $.ajax({
-                    url: 'Home/Index',  //(rec)= Controller's-name
-                    //(recieveData) = Action's method name
-                    type: 'POST',
-                    timeout: '12000', //(optional 12 seconds)
-                    datatype: 'text',
-                    data: {
-                        //Get the input from Document Object Model
-                        //by their ID
-                        name: contact_form.name.value,
-                        email: contact_form.email.value,
-                        subject: contact_form.subject.value,
-                        message: contact_form.message.value
-                    },
-                    success: function (data) {
-
-                        if (data.Message == undefined) {
-                            // Use data like a partial
-                        } else {
-                            // Use data.Message for the message and data.AjaxReturn for the partial
-                        }
-                    },
-                    error: function (message) {
-                        logOut($self, message);
-                    }
-                });
-                return false;
-            });
-
-        });
-
-    </script>
-
+   
     <footer id="footer">
         <div class="container">
             <div class="text-center">

@@ -303,8 +303,11 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\jquery.sidr.dark.css" />
     <Content Include="css\jquery.vegas.min.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\reset.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ticker-style.css" />
@@ -336,6 +339,7 @@
     <Content Include="images\forkme.png" />
     <Content Include="images\guitar.png" />
     <Content Include="images\guitar2.jpg" />
+    <Content Include="images\home-pattern.png" />
     <Content Include="images\ico\favicon.ico" />
     <Content Include="images\light.png" />
     <Content Include="images\links\Financial Literacy.png" />
@@ -350,6 +354,7 @@
     <Content Include="images\our-team\member1.png" />
     <Content Include="images\our-team\member2.png" />
     <Content Include="images\our-team\member3.png" />
+    <Content Include="images\pattern.png" />
     <Content Include="images\performar-bg.jpg" />
     <Content Include="images\slider\bg1.jpg" />
     <Content Include="images\slider\bg10.jpg" />
@@ -377,15 +382,19 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\coundown-timer.js" />
     <Content Include="js\gmaps.js" />
+    <Content Include="js\html5shiv.js" />
     <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="js\jquery.isotope.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.knob.js" />
     <Content Include="js\jquery.nav.js" />
     <Content Include="js\jquery.parallax.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
     <Content Include="js\jquery.scrollTo.js" />
     <Content Include="js\jquery.ticker.js" />
     <Content Include="js\jquery.vegas.min.js" />
     <Content Include="js\main.js" />
+    <Content Include="js\respond.min.js" />
     <Content Include="js\smoothscroll.js" />
     <Content Include="js\wow.min.js" />
     <Content Include="Scripts\bootstrap.js" />
