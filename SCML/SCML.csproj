@@ -309,6 +309,7 @@
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\responsive.css" />
+    <Content Include="css\styles2nd.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ticker-style.css" />
     <Content Include="Documents\Image_e28138bb-40e6-49d4-9a28-5a5a8f03656b_price list 2.png" />
@@ -325,6 +326,10 @@
     <Content Include="images\about-us\mission.jpg" />
     <Content Include="images\about-us\values.jpg" />
     <Content Include="images\about-us\vision.jpg" />
+    <Content Include="images\bgbox %281%29.png" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\bullet_g.png" />
+    <Content Include="images\bullet_r.png" />
     <Content Include="images\contact-bg.jpg" />
     <Content Include="images\controls.png" />
     <Content Include="images\dl-arr.png" />
@@ -335,6 +340,7 @@
     <Content Include="images\event\event2.jpg" />
     <Content Include="images\event\event3.jpg" />
     <Content Include="images\favicon.ico" />
+    <Content Include="images\financialliteracy_logo.png" />
     <Content Include="images\footer-bg.jpg" />
     <Content Include="images\forkme.png" />
     <Content Include="images\guitar.png" />

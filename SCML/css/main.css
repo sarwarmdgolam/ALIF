@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 	
 	padding: 22px 15px;	
-	/*height: 68px;*/
+	height: 71px;
 }
 
 #navigation .navbar-inverse .navbar-nav  .active  a,  
@@ -1766,4 +1766,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team-member .social-icons ul li a:hover {
 	color: #e96656;
+}
+
+
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    /* color: #333; */
+    white-space: nowrap;
+    background-color: #292772;
+    color: #999;
+}
+
+
+#logoff .logoff {
+    /*color: #c1a956 !important;*/ 
+    position: relative; 
+    text-underline-position:below
+        
 }
