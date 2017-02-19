@@ -349,6 +349,7 @@
     <Content Include="images\ico\favicon.ico" />
     <Content Include="images\light.png" />
     <Content Include="images\links\Financial Literacy.png" />
+    <Content Include="images\Login.png" />
     <Content Include="images\Logo.gif" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo1.png" />
@@ -362,6 +363,7 @@
     <Content Include="images\our-team\member3.png" />
     <Content Include="images\pattern.png" />
     <Content Include="images\performar-bg.jpg" />
+    <Content Include="images\slider\address change Door White.jpg" />
     <Content Include="images\slider\bg1.jpg" />
     <Content Include="images\slider\bg10.jpg" />
     <Content Include="images\slider\bg2.jpg" />

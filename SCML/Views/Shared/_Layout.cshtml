@@ -57,13 +57,13 @@
 
 
 
-    @*<script type="text/javascript">
+    <script type="text/javascript">
 
         $(window).on('load', function () {
             $('#myModal').modal('show');
         });
 
-    </script>*@
+    </script>
 
 </head>
 
@@ -80,21 +80,24 @@
                 <div class="ball"></div>
             </div>
         </div>
-    </div>*@<!--/.preloader-->
+    </div>*@
+    
+    <!--/.preloader-->
+
 
     <div class="container">
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog" style=" padding-top: 250px;    padding-left: 200px;">
+            <div class="modal-dialog" >
 
                 <!-- Modal content-->
-                <div class="modal-content" style="width: 256px;">
+                <div class="modal-content">
                     <!-- <div class="modal-header">
                          <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                      </div>-->
                     <div class="modal-body">
-                        <img class="img-responsive" src="../Documents/Image_e28138bb-40e6-49d4-9a28-5a5a8f03656b_price list 2.png" alt="slider">
+                        <img class="img-responsive" src="~/images/slider/address change Door White.jpg" alt="slider">
                     </div>
                     <!--<div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -117,8 +120,12 @@
 
                     <a class="navbar-brand" style="background-color:#ffffff" href="index.html"><h1><img src="~/images/logo.png" alt="logo"></h1></a>
                 </div>
+                
                 <div class="collapse navbar-collapse">
-
+                    <div style="float:right">
+                        <a href="/Partial/FinancialLiteracy"><img src="/images/links/Financial Literacy.png" width="60" height="30" alt="Owl Image"></a>
+                        <a href="/account/login" title="Login"><img src="/images/Login.png" width="30" alt="Owl Image"></a>
+                    </div>    
                     <ul class="nav navbar-nav navbar-right">
                         <li class="scroll"><a href="#navigation">Home</a></li>
                         <li class="scroll"><a href="#about-us">About Us</a></li>
@@ -166,22 +173,12 @@
 
                     </ul>
                 </div>
-
-                <div class="icon-top golden-text text-right" style="font-size:30px; padding:10px 0px 0px 10px">
-                    <ul class="nav navbar-nav navbar-right" >
-                        <li class="scroll"><a href="/Partial/FinancialLiteracy"><img src="/images/links/Financial Literacy.png" width="60px" height="30px" alt="Owl Image"></a></li>
-                        <li class="scroll"><a href="http://portal.office.com" title="Web Mail" >Web Mail</a></li>
-                        <li class="scroll"><a href="/account/login" title="Login" >Login</a></li>
-                    </ul>
-                </div>
+                
+                
             </div>
         </div><!--/navbar-->
     </header> <!--/#navigation-->
 
-
-   
-
-   
 
     @RenderBody()
 
